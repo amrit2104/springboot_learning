@@ -17,7 +17,8 @@ public class CourseController // this is a class of name COurseCOntroller
 		return Arrays.asList(
 				new Course(1, "Learn AWS", "amrit"),
 				new Course(2, "Learn DevOps","dude"),
-				new Course(3, "Learn Azure","dude")
+				new Course(3, "Learn Azure","dude"),
+				new Course(4, "Learn Spring","rath")
 				);
 	}
 }
