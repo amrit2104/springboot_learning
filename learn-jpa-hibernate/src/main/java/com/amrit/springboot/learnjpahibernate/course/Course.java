@@ -1,9 +1,20 @@
 package com.amrit.springboot.learnjpahibernate.course;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+//@Entity (name="Course_Details") : we can put the mapping in this way as well.
+@Entity
 public class Course 
 {
+	@Id //making id as the primary key.
 	private long id;
+	
+	@Column(name="name")
 	private String name;
+	
+	@Column(name="author")
 	private String author;
 	
 	//we need to get:
