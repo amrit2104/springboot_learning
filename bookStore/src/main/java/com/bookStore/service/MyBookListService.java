@@ -1,12 +1,11 @@
 package com.bookStore.service;
 
-import java.util.List;
-
+import com.bookStore.entity.MyBookList;
+import com.bookStore.repository.MyBookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.bookStore.entity.MyBookList;
-import com.bookStore.repository.MyBookRepository;
+import java.util.List;
 
 @Service
 public class MyBookListService {
@@ -18,11 +17,12 @@ public class MyBookListService {
         mybook.save(book);
     }
 
-    public List<MyBookList> getAllMyBooks(){
+    public List<MyBookList> getAllMyBooks() {
         return mybook.findAll();
     }
 
-    public void deleteById(int id) {
+    public void deleteById(int id)
+    {
         mybook.deleteById(id);
     }
 }
